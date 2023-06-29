@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  overflow-x: hidden;
+}
+
+body {
+  max-width: 100%;
+  width: 100%;
+}
+
+#navbar {
+  background: linear-gradient(to right, #fd267d, #ff7854);
+
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+#brand {
+  color: #fff;
+}
+
+#brand i {
+  font-size: 2.3rem;
+  margin-right: 4px;
+}
+
+header .navbar-brand {
+  color: black;
+  font-weight: bold;
+  font-size: 1.8rem;
+
+}
+
+header .nav-item a {
+  margin: 0px 10px;
+  font-size: 1.2rem;
+  color: #fff !important;
+}
+
+#btnSearch {
+  border-radius: 24px;
+  padding: 0px 32px;
+  color: #fff;
+  background: linear-gradient(to right, #ff7854, #fd267d);
+  border: 2px double #fff;
+  ;
+}
+
+#btnSearch:hover {
+  background: linear-gradient(to right, #b53a6c, #ff7854);
+
+}
+
+/* home page */
+#title {
+  background: linear-gradient(to right, #fd267d, #ff7854);
+  padding: 5% 5%;
+
+}
+
+
+
+.heading {
+  color: #fff;
+}
+
+#appleBtn {
+  font-size: 1.3rem;
+  padding: 8px 24px;
+  border-radius: 24px;
+  color: #000;
+  background: #fff;
+}
+
+#appleBtn svg {
+  transform: translate(-1px, -5px);
+}
+
+#downloadBtn {
+  border-color: #fff;
+  font-size: 1.3rem;
+  color: #000;
+  padding: 6px 24px;
+  border-radius: 24px;
+  margin-left: 1rem;
+  transition: .2s all ease;
+}
+#downloadBtn:hover{
+  background-color: #fff;
+}
+
+#downloadBtn svg {
+  transform: translate(-1px, -1px);
+}
+
+/* fetures */
+
+#features{
+  padding: 5% 5%;
+  text-align: center;
+  background: #f5f3f3;
+}
+.featureHeading{
+  font-weight: 700;
+  color: rgb(0 0 0 / 69%);
+  margin-bottom: 5%;
+}
+
+#features svg{
+  color:  #ff7854;
+  cursor: pointer;
+  transition: .2s all ease;
+}
+#features svg:hover{
+  color: #fd267d;
+}
+.featuresPra{
+  color: grey;
+}
+
+/* testimonial */
+#testimonial{
+  background: #ef8172;;
+
+  padding: 5% 5%;
+}
+.testimonial-heading{
+  color:#fff;
+    margin-bottom: 47px;
+    font-weight: 700;
+
+}
+.testimonial-item {
+  /* background-color: #eee2e2; */
+  height: 300px;
+  border-radius: 4px;
+  color: #fff;
+  /* padding: 20px 10px; */
+  /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+   
+}
+
+.imgBox img{
+  width: 9rem;
+    height: 9rem;
+    border-radius: 50%;
+
+}
+.info{
+  padding: 10px;
+  margin: 14px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
+.info p{
+  font-family: cursive;
+  font-size: 1.3rem;
+
+}
+.info span{
+  color: #000;
+  margin-top: -13px;
+  font-size: 1.1rem;
+}
+/* pricing */
+#pricing{
+  padding: 5% 5%;
+  background: #f5f3f3;
+  text-align: center;
+}
+ #pricing .card{
+  cursor: pointer;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; 
+
+}
+
+ .pricingHeading{
+  font-weight: 700;
+  color: rgb(0 0 0 / 69%);
+}
+.pricingPra{
+  color: grey;
+  font-size: 1.1rem;
+  margin-bottom: 3.063rem;
+}
+.btnPricing{
+  border-radius: 24px;
+padding: 7px 34px;
+color: #fff;
+outline: none;
+
+background: linear-gradient(to right, #ff7854, #fd267d);
+border: 2px double #fff;
+transition: all .2s ease;
+}
+.btnPricing:hover{
+  outline: none;
+  border: 2px double #fff;
+  background: linear-gradient(to right, #fd267d, #ff7854);
+}
+#download{
+  padding: 5% 5%;
+  text-align: center;
+  background-color: #fd267d;
+}
+#download h1{
+  font-size: 3rem;
+letter-spacing: 1px;
+color: #fff;
+margin-bottom: 27px;
+}
+
+/* footer */
+#footer{
+  padding: 5% 5%;
+  background-color: #f5f3f3;
+  text-align: center;
+}
+#footer ul{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#footer ul li{
+  margin: 0 31px;
+}
+#footer ul li a{
+  color: #ef8172;
+  cursor: pointer;
+  transition: all .2s ease;
+}
+#footer ul li a:hover{
+  color:#fd267d;
+  
+
+
+}
+#footer p{
+  font-size: 1.3rem;
+  margin-top: 41px;
+  color: grey;
+
+}
+#footer p b{
+  color: #fd267d;
+}
+/* media query */
+@media (max-width: 991px) {
+  .navbarUl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    --bs-scroll-height: none;
+  }
+
+  .searchBtn {
+    justify-content: center;
+  }
+
+  .searchBtn input {
+    width: 31%;
+  }
+  .heading {
+    font-size: 3.7rem;
+    line-height: 66px;
+  }
+  #appleBtn{
+    margin-left: -10px;
+  }
+  #downloadBtn{
+ 
+  }
+  #download #downloadBtn{
+    margin-left: 17px;
+  }
+ 
+/*dowload */
+
+
+}
+@media(max-width:754px){
+
+  .centerDiv{
+    text-align: center;
+  }
+  .heading{
+    font-size: 4rem;
+  }
+  #appleBtn{
+    margin-top: -46px;
+  }
+  #download #appleBtn{
+    margin-top: 0px;
+  }
+  #downloadBtn{
+    margin-top: -46px;
+  }
+  #download #downloadBtn{
+    margin-top: 0px;
+  }
+
+  #title img{
+    margin-top: 40px;
+  }
+  .featuresPra{
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width:600px) {
+  .testimonial-heading{
+    margin-top: 26px;
+  }
+  .searchBtn input {
+    width: 50%;
+  }
+  .heading{
+    font-size: 3.5rem;
+  }
+
+  #brand {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+
+  }
+  .featureHeading{
+    margin-top: 2rem;
+  }
+}
+@media (max-width:400px) {
+  #downloadBtn{
+    margin-top: 6px;
+  }
+  #download #downloadBtn{
+    margin-top: 18px;
+    margin-left: 2px;
+    
+  
+  }
+  #footer ul li{
+    margin: 0 21px;
+    margin-top: 42px;
+  }
+ 
+}
+@media (max-width:394px) {
+  #downloadBtn{
+    margin-top: 6px;
+  }
+  #download #downloadBtn{
+    margin-top: 18px;
+    margin-left: -11px;
+  
+  }
+}
